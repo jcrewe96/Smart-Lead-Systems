@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lead Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="chatbot.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Lead Systems</h1>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>AI-Powered Lead Generation That Works While You Sleep</h1>
+        <p>Supercharge your sales with <b>AI-driven lead generation</b> that captures, qualifies, and nurtures prospects <b>24/7</b>—so you can focus on closing deals.</p>
+        <ul>
+            <li>🚀 <b>Automated lead capture & qualification</b> – No more chasing cold leads.</li>
+            <li>📈 <b>Data-driven insights</b> – AI pinpoints your most valuable prospects.</li>
+            <li>💰 <b>Higher conversions, less effort</b> – Spend time closing, not prospecting.</li>
+            <li>🔗 <b>Seamless CRM & marketing integration</b> – Leads delivered straight to your pipeline.</li>
+        </ul>
+        <a href="contact.html" class="button">Start Generating Leads Today</a>
+    </section>
+
+    <section class="services">
+        <h2>🚀 Unlock More Sales with Our AI-Powered Solutions</h2>
+        <p>We don’t just generate leads—we deliver high-intent prospects ready to convert. Our cutting-edge AI solutions help businesses scale effortlessly.</p>
+        
+        <div class="service-box">
+            <h3>🤖 AI Chatbots for Lead Capture</h3>
+            <p>Engage visitors instantly with smart chatbots that qualify leads in real-time—24/7, without lifting a finger.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📋 High-Converting Lead Forms</h3>
+            <p>Optimised, data-driven forms that increase conversions and capture the right prospects at the right time.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🎯 Targeted Ad Campaigns</h3>
+            <p>Hyper-targeted paid ads that drive quality leads directly into your sales pipeline—no wasted budget.</p>
+        </div>
+    </section>
+
+<div id="chatbot-container">
+    <div id="chatbot-icon" onclick="toggleChat()">💬</div>
+    <div class="chatbot-box" id="chatbot-box">
+        <div class="chat-header">
+            Smart AI 
+            <button onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <input type="text" id="chat-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+    
+</body>
+</html>
+
+
+
+
